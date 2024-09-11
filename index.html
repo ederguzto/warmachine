@@ -17,6 +17,22 @@
         }
 
         body {
+            background-image: url('src/img/fundo.png');
+            background-size: cover;
+            /* Ajusta a imagem para cobrir toda a tela */
+            background-repeat: no-repeat;
+            /* Evita que a imagem se repita */
+            background-attachment: fixed;
+            /* Mantém a imagem fixa quando você rola a página */
+            background-position: center;
+            /* Centraliza a imagem no fundo */
+            height: 100vh;
+            /* Garante que o body tenha a altura da viewport */
+            margin: 0;
+            /* Remove margem padrão */
+        }
+
+        body {
             display: flex;
             flex-direction: column;
         }
@@ -70,7 +86,7 @@
     <!-- Cabeçalho -->
     <nav class="navbar navbar-expand-lg bg-warning bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand text-dark" href="#">War Machine | Clash of Clans</a>
+            <a class="navbar-brand text-dark" href="https://discord.gg/rD9GkCKX6d">War Machine | Clash of Clans</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -78,19 +94,20 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto d-flex align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" aria-current="page" href="#"><strong>Início</strong></a>
+                        <a class="nav-link text-dark" aria-current="page"
+                            href="https://discord.gg/rD9GkCKX6d"><strong>Início</strong></a>
                     </li>
                     <li class="nav-item d-none d-lg-block mx-2">
                         <span class="text-dark" style="border-left: 1px solid #000000; height: 20px;"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#"><strong>Sobre</strong></a>
+                        <a class="nav-link text-dark" href="https://discord.gg/rD9GkCKX6d"><strong>Sobre</strong></a>
                     </li>
                     <li class="nav-item d-none d-lg-block mx-2">
                         <span class="text-dark" style="border-left: 1px solid #000000; height: 20px;"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#"><strong>Discord</strong></a>
+                        <a class="nav-link text-dark" href="https://discord.gg/rD9GkCKX6d"><strong>Discord</strong></a>
                     </li>
                 </ul>
             </div>
@@ -100,12 +117,12 @@
     <!-- Conteúdo Principal -->
     <main class="container my-5">
         <header class="text-center mb-5 header-justified">
-            <h1 class="display-5 font" style="margin-top: 50px;"><strong>Vagas Disponíveis no Clã</strong></h1>
-            <p class="lead">Você está pronto para se juntar a um clã que valoriza a estratégia, o comprometimento e o
+            <h1 class="display-5 font text-white" style="margin-top: 50px;"><strong>Vagas Disponíveis no Clã</strong></h1>
+            <p class="lead text-white">Você está pronto para se juntar a um clã que valoriza a estratégia, o comprometimento e o
                 crescimento contínuo? No nosso clã, não apenas jogamos Clash of Clans; nós vivemos e respiramos a
                 essência das guerras e da evolução. Se você é apaixonado por batalhas épicas e tem a disposição de
                 aprimorar suas habilidades, você está no lugar certo.</p>
-            <p class="lead">Estamos recrutando jogadores para preencher posições cruciais e fortalecer nossa equipe. Se
+            <p class="lead text-white">Estamos recrutando jogadores para preencher posições cruciais e fortalecer nossa equipe. Se
                 você tem um Centro de Vila alto e está pronto para ser um colíder estratégico, auxiliar nas guerras como
                 Ancião, ou se destacar como um membro guerreiro dedicado, nós queremos conhecê-lo. Explore nossas vagas
                 e veja como você pode se tornar uma peça-chave na nossa jornada rumo à vitória!</p>
@@ -120,7 +137,7 @@
                             de níveis altos. Você deve ter uma forte habilidade tática para coordenar guerras e um
                             compromisso sério com o crescimento do clã. Se você está pronto para liderar e contribuir
                             com estratégias vencedoras, queremos você no nosso time!</p>
-                        <a href="#" class="btn btn-warning">Aplicar Agora</a>
+                        <a href="https://discord.gg/rD9GkCKX6d" class="btn btn-warning">Aplicar Agora</a>
                     </div>
                 </div>
             </div>
@@ -132,7 +149,7 @@
                             candidato deve ter um Centro de Vila 12, 13 ou superior, com heróis bem evoluídos e uma vila
                             bem upada. Se você tem experiência e está disposto a ajudar na liderança e no crescimento do
                             clã, esta é a vaga para você!</p>
-                        <a href="#" class="btn btn-warning">Aplicar Agora</a>
+                        <a href="https://discord.gg/rD9GkCKX6d" class="btn btn-warning">Aplicar Agora</a>
                     </div>
                 </div>
             </div>
@@ -144,7 +161,7 @@
                             Buscamos jogadores com Centro de Vila 12, 13 ou mais, com heróis bem evoluídos e vilas bem
                             upadas. Se você está pronto para contribuir com as guerras e se comprometer com o sucesso do
                             clã, entre para o nosso time!</p>
-                        <a href="#" class="btn btn-warning">Aplicar Agora</a>
+                        <a href="https://discord.gg/rD9GkCKX6d" class="btn btn-warning">Aplicar Agora</a>
                     </div>
                 </div>
             </div>
@@ -152,12 +169,12 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="footer text-center">
+    <footer class="footer text-center bg-warning">
         <div class="container">
             <div class="d-flex justify-content-center">
-                <p class="mb-1 me-2">&copy; Todos os direitos reservados.</p>
-                <a href="#" class="mx-2">Termos de Serviço</a>
-                <a href="#" class="mx-2">Política de Privacidade</a>
+                <p class="mb-1 me-2 text-dark">&copy; Todos os direitos reservados.</p>
+                <a href="https://discord.gg/rD9GkCKX6d" class="mx-2 text-dark">Termos de Serviço</a>
+                <a href="https://discord.gg/rD9GkCKX6d" class="mx-2 text-dark">Política de Privacidade</a>
             </div>
         </div>
     </footer>
