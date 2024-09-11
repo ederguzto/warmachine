@@ -1,99 +1,184 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divulgação de Vagas</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vagas de Emprego</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles/fonts.css">
+
     <style>
+        html,
         body {
-            padding-top: 56px; /* Espaço para o cabeçalho fixo */
+            height: 100%;
+            margin: 0;
         }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        .header-justified p {
+            text-align: justify;
+        }
+
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
         .job-card {
-            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
         }
+
+        .job-card:hover {
+            transform: scale(1.05);
+        }
+
         .footer {
-            background-color: #f8f9fa;
-            padding: 20px 0;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 30px 0;
+        }
+
+        .footer a {
+            color: #ffffff;
+        }
+
+        .font {
+            font-family: 'font-clashofclans', supercell-magic-webfont;
+        }
+
+        @font-face {
+            font-family: 'font-clashofclans';
+            /* Nome da fonte que você escolhe */
+            src: url('../fonts/font-clashofclans.ttf') format('truetype');
+            /* Caminho para o arquivo .ttf */
+            font-weight: normal;
+            font-style: normal;
         }
     </style>
 </head>
+
 <body>
     <!-- Cabeçalho -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Vagas Emprego</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand text-dark" href="#">War Machine | Clash of Clans</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto d-flex align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link text-dark" aria-current="page" href="#"><strong>Início</strong></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-2">
+                        <span class="text-dark" style="border-left: 1px solid #000000; height: 20px;"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link text-dark" href="#"><strong>Sobre</strong></a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block mx-2">
+                        <span class="text-dark" style="border-left: 1px solid #000000; height: 20px;"></span>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link text-dark" href="#"><strong>Discord</strong></a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
+
     <!-- Conteúdo Principal -->
     <main class="container my-5">
-        <h1 class="mb-4">Vagas Disponíveis</h1>
-        <div class="row">
+        <header class="text-center mb-5 header-justified">
+            <h1 class="display-4 font" style="margin-top: 20px;"><strong>Vagas Disponíveis no Clã</strong></h1>
+            <p class="lead">Você está pronto para se juntar a um clã que valoriza a estratégia, o comprometimento e o
+                crescimento contínuo? No nosso clã, não apenas jogamos Clash of Clans; nós vivemos e respiramos a
+                essência das guerras e da evolução. Se você é apaixonado por batalhas épicas e tem a disposição de
+                aprimorar suas habilidades, você está no lugar certo.</p>
+            <p class="lead">Estamos recrutando jogadores para preencher posições cruciais e fortalecer nossa equipe. Se
+                você tem um Centro de Vila alto e está pronto para ser um colider estratégico, auxiliar nas guerras como
+                Ancião, ou se destacar como um membro guerreiro dedicado, nós queremos conhecê-lo. Explore nossas vagas
+                e veja como você pode se tornar uma peça-chave na nossa jornada rumo à vitória!</p>
+        </header>
+
+
+
+        <div class="row g-4">
             <div class="col-md-4">
-                <div class="card job-card">
+                <div class="card job-card shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Desenvolvedor Frontend</h5>
-                        <p class="card-text">Estamos procurando um desenvolvedor frontend com experiência em HTML, CSS e JavaScript. Conhecimento em frameworks como React ou Vue.js é um diferencial.</p>
-                        <a href="#" class="btn btn-primary">Aplicar Agora</a>
+                        <h5 class="card-title">Colíder</h5>
+                        <p class="card-text">Estamos em busca de um Colíder com Centro de Vila 14 bem evoluído e heróis
+                            de níveis altos. Você deve ter uma forte habilidade tática para coordenar guerras e um
+                            compromisso sério com o crescimento do clã. Se você está pronto para liderar e contribuir
+                            com estratégias vencedoras, queremos você no nosso time!</p>
+                        <a href="#" class="btn btn-warning">Aplicar Agora</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card job-card">
+                <div class="card job-card shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Designer UI/UX</h5>
-                        <p class="card-text">Procuramos um designer UI/UX para criar interfaces atraentes e funcionais. Experiência com ferramentas como Figma ou Sketch é necessária.</p>
-                        <a href="#" class="btn btn-primary">Aplicar Agora</a>
+                        <h5 class="card-title">Ancião</h5>
+                        <p class="card-text">Procuramos um Ancião para apoiar o Colíder na guerra e no recrutamento. O
+                            candidato deve ter um Centro de Vila 12, 13 ou superior, com heróis bem evoluídos e uma vila
+                            bem upada. Se você tem experiência e está disposto a ajudar na liderança e no crescimento do
+                            clã, esta é a vaga para você!</p>
+                        <a href="#" class="btn btn-warning">Aplicar Agora</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card job-card">
+                <div class="card job-card shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">Analista de QA</h5>
-                        <p class="card-text">Estamos em busca de um analista de QA para testar e garantir a qualidade dos nossos produtos. Experiência com testes automatizados é um diferencial.</p>
-                        <a href="#" class="btn btn-primary">Aplicar Agora</a>
+                        <h5 class="card-title">Membro Guerreiro</h5>
+                        <p class="card-text">Estamos recrutando membros guerreiros dedicados para as batalhas do clã.
+                            Buscamos jogadores com Centro de Vila 12, 13 ou mais, com heróis bem evoluídos e vilas bem
+                            upadas. Se você está pronto para contribuir com as guerras e se comprometer com o sucesso do
+                            clã, entre para o nosso time!</p>
+                        <a href="#" class="btn btn-warning">Aplicar Agora</a>
                     </div>
                 </div>
             </div>
+        </div>
+
+
         </div>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="footer text-center">
-        <div class="container">
-            <p class="mb-0">© 2024 Vagas Emprego. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- Optional: Icons from Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
 </body>
+<!-- Rodapé -->
+<footer class="footer text-center">
+    <div class="container">
+        <!-- Informações de Direitos Autorais e Links de Política -->
+        <div class="d-flex justify-content-center">
+            <p class="mb-1 me-2">&copy; Todos os direitos reservados.</p>
+            <a href="#" class="mx-2">Termos de Serviço</a>
+            <a href="#" class="mx-2">Política de Privacidade</a>
+        </div>
+    </div>
+</footer>
+
 </html>
-
-
-<!--
-
-git add . 
-git commit -m "att"
-git push origin main
-
--->
