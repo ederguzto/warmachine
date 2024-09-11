@@ -1,12 +1,7 @@
-# Meu Formulário de Cadastro
+# HTML War Machine
 
-Este é um formulário simples para cadastro de usuários. Os dados são enviados para um e-mail especificado.
+Este é um HTML
 
 ## Estrutura
 
-- `index.html`: Página do formulário.
-- `enviar_email.php`: Script para processar o formulário e enviar os dados por e-mail.
-
-## Configuração
-
-1. Clone este repositório:
+- `index.html`: Página 
